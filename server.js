@@ -22,10 +22,10 @@ var articleOne={
 }
 
 function createTemplate(data){
-    title = data.title;
-    heading = data.heading;
-    date = data.date;
-    content = data.content;
+    var title = data.title;
+    var heading = data.heading;
+    var date = data.date;
+    var content = data.content;
     var htmlTemplate=`<html>
         <head>
             <title>
@@ -50,6 +50,7 @@ function createTemplate(data){
         </body>
     </html>
     `;
+    return htmlTemplate;
 }
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
