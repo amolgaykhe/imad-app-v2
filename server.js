@@ -9,7 +9,16 @@ var articleOne={
     title:'Article One | Amol Gaykhe',
     heading:'Article One',
     date:'Jan 5, 2017',
-    content:
+    content:`
+        <p>
+            This is the content for my first article. This is the content for my first article.This is the content for my first article.This is the content for my first article.
+        </p>
+        <p>
+            This is the content for my first article. This is the content for my first article.This is the content for my first article.This is the content for my first article.
+        </p>
+        <p>
+            This is the content for my first article. This is the content for my first article.This is the content for my first article.This is the content for my first article.
+        </p>`
 }
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
