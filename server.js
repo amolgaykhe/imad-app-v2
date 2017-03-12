@@ -48,7 +48,7 @@ var articles = {
     }
 };
 
-function createTemplate(data){
+/*function createTemplate(data){
     //var title = data.title;
     var heading = data.heading;
     var date = data.date;
@@ -78,7 +78,7 @@ function createTemplate(data){
     </html>
     `;
     return htmlTemplate;
-}
+}*/
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
